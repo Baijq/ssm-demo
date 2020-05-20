@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.demo.mapper.UserMapper">
+
+    <!--结果集映射   -->
+    <resultMap id="UserRMap" type="user">
+        <id column="user_id" property="userId"/>
+        <result column="user_name" property="userName"/>
+        <result column="user_password" property="password"/>
+        <result column="user_mail" property="mail"/>
+        <result column="user_state" property="state"/>
+        <result column="user_reward" property="reward"/>
+    </resultMap>
+
+    <!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
+    <select id="queryAll" resultMap="UserRMap">
+        select * from testdb.user
+    </select>
+</mapper>
