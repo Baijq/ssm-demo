@@ -34,6 +34,7 @@
           <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2.1-b03" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.12" />
+          <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
